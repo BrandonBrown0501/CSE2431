@@ -13,9 +13,9 @@ import java.util.*;
 
 public class SudokuArray{ 
 
-    private BufferedReader inputFile;			  // File reader
-    int ROW_COL_SIZE = 9;				  // Row & Column Length 
-    int[][] puzzle = new int[ROW_COL_SIZE][ROW_COL_SIZE]; // Sudoku Table 
+    private BufferedReader inputFile;			  	  // File reader
+    private int ROW_COL_SIZE = 9;				  // Row & Column Length 
+    private int[][] puzzle = new int[ROW_COL_SIZE][ROW_COL_SIZE]; // Sudoku Table 
 
     // Constructor
     public SudokuArray(String fileName){
@@ -59,6 +59,11 @@ public class SudokuArray{
 	    }
 	}
 
+    }
+
+    // Get the sudoku puzzle that made from the input file
+    public int[][] getPuzzle(){
+	return puzzle;
     }
       
 }
